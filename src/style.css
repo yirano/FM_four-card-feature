@@ -55,13 +55,12 @@ body {
   font-size: 15px;
   background-color: hsla(228, 6%, 66%, 0.055);
   color: hsl(234, 12%, 34%);
-  height: auto;
   margin: 0 auto;
 }
 
 main {
   padding: 0 30px;
-  padding-bottom: 90px;
+  height: 100vh;
 }
 
 header {
@@ -166,6 +165,7 @@ p.caption {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 
 @media only screen and (max-width: 1024px) {
   header h2 {
