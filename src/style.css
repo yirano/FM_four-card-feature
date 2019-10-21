@@ -1,3 +1,12 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fromLeft {
   0% {
     opacity: 0;
@@ -190,11 +199,11 @@ p.caption {
 
   .order-1,
   .order-3 {
-    animation: fromLeft 400ms ease-in;
+    animation: opacity 300ms ease-in;
   }
 
   .order-2,
   .order-4 {
-    animation: fromRight 400ms ease-in;
+    animation: opacity 300ms ease-in;
   }
 }
