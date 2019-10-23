@@ -60,6 +60,7 @@
 }
 
 body {
+  position: relative;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   background-color: hsla(228, 6%, 66%, 0.055);
@@ -69,7 +70,7 @@ body {
 
 main {
   padding: 0 30px;
-  height: 100vh;
+  height: 100%;
 }
 
 header {
@@ -108,11 +109,12 @@ p.caption {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 355px));
+  grid-template-columns: repeat(auto-fit, minmax(155px, 355px));
   grid-column: 1/12;
   grid-row: 6;
   grid-gap: 30px;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .card {
@@ -175,7 +177,6 @@ p.caption {
   color: hsl(228, 45%, 44%);
 }
 
-
 @media only screen and (max-width: 1024px) {
   header h2 {
     font-size: 1.6em;
@@ -186,11 +187,11 @@ p.caption {
   }
 
   .card-top {
-    grid-row: 3/span 2;
+    grid-row: 1/span 2;
   }
 
   .card-right {
-    grid-row: 7/span 2;
+    grid-row: 5/span 2;
   }
 
   .card-bottom {
@@ -205,5 +206,23 @@ p.caption {
   .order-2,
   .order-4 {
     animation: opacity 300ms ease-in;
+  }
+
+  @media only screen and (max-width: 746px) {
+    .card-left {
+      grid-row: 1/span 2;
+    }
+  
+    .card-top {
+      grid-row: 3/span 2;
+    }
+  
+    .card-right {
+      grid-row: 7/span 2;
+    }
+  
+    .card-bottom {
+      grid-row: 5/span 2;
+    }
   }
 }
